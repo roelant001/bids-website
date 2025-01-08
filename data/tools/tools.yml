@@ -152,6 +152,32 @@
         url: https://pypi.org/project/bsmschema/
     description: Validate BIDS statistical model. To learn more the [BIDS stats model website](https://bids-standard.github.io/stats-models/index.html)
 
+-   name: LazyBIDS
+    repo_url: https://github.com/lazybids/lazybids
+    documentation: https://lazybids.github.io/lazybids/
+    language:
+    -   Python
+    category: index and query
+    description: Python package to interact with BIDS datasets in a pythonic way. A BIDS dataset is read to hierarchical pydantic models (e.g. 
+        dataset->subjects->sessions->scans), variables are accesibles as model properties, tables, SimpleITK Images and numpy arrays. Also serves
+        as python client for lazybids-ui server.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/lazybids/
+
+-   name: LazyBIDS-ui
+    repo_url: https://github.com/lazybids/lazybids-ui
+    documentation: https://lazybids.github.io/lazybids-ui/
+    language:
+    -   Python
+    -   HTML  
+    category: data annotation
+    description: FastAPI web server providing a GUI to explore (imaging) BIDS datasets interactively, also provides (XNAT-like) REST-API to access 
+        (parts of) datasets on a client machine. Uses NiiVue to view and navigate (3D) images in the browser.
+    distribution:
+    -   name: pypi
+        url: https://pypi.org/project/lazybids-ui/
+
 -   name: bids-cfood
     repo_url: https://gitlab.indiscale.com/caosdb/src/crawler-cfoods/bids-cfood
     language:
